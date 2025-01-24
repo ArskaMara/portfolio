@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio and About Me Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <nav class="navbar">
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#" onclick="toggleContact()">Contact</a></li>
+        </ul>    
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar"style="--i:6;"></div>
+        <div class="bar"style="--i:5;"></div>
+        <div class="bar"style="--i:4;"></div>
+        <div class="bar"style="--i:3;"></div>
+        <div class="bar"style="--i:2;"></div>
+        <div class="bar"style="--i:1;"></div>
+    </div>
+
+    <section class="home">
+        <div class="home-info">
+            <h1>Hello, I'm <span>Aaro Martti</span></h1>
+            <h2>And I'm a
+                <span style="--i:3;" data-text="Information Technology Student">Information Technology Student</span>
+                <span style="--i:2;" data-text="Frontend Developer">Frontend Developer</span>
+                <span style="--i:1;" data-text="Web Developer">Web Developer</span>
+            </h2>
+            <p>Hello everyone,
+
+                My name is Aaro Martti, a 24-year-old student currently living in Kuopio, Finland, though I originally hail from Lappeenranta. I'm pursuing a degree in Information Technology at Savonia University of Applied Sciences, combining my passion for technology with my drive to develop practical skills for the future.
+                
+                Outside of academics, my life revolves around two key interests: sports and programming. I enjoy staying active through various forms of exercise, whether it’s team sports, outdoor adventures, or hitting the gym. On the technical side, I dedicate a lot of my free time to programming, particularly web development using JavaScript, HTML, and CSS. These activities keep me balanced and constantly learning, whether it’s physical challenges or solving coding problems.
+                
+                If I’m not on the move or at my computer, you’ll likely find me exploring new projects, challenging myself to improve, or simply enjoying life in my current hometown of Kuopio.
+                
+                Thank you!</p>
+            <div class="btn-sci">
+                <a href="https://drive.google.com/file/d/11degGMT-ETAHc02-NbUyMNb8ynaNZZVD/view?usp=sharing" target="blank" class="btn">See my CV</a>
+                <div class="sci">
+                    <a href="https://github.com/ArskaMara" target="blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://instagram.com/aaromartti_" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.linkedin.com/in/aaro-martti" target="_blank"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://snapchat.com/add/aaromartti8" target="_blank"><i class='bx bxl-snapchat' ></i></a>                    
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="home-img">
+            <div class="img-box">
+                <idiv class="img-item">
+                    <img src="Aihe.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-info" style="display: none;">
+        <h2>Contact Information</h2>
+        <p>Email: aaromartti25@gmail.com</p>
+        <p>Phone: +35840571122</p>
+    </section>
+
+    <script>
+        function toggleContact() {
+            const contactInfo = document.getElementById('contact-info');
+            if (contactInfo.style.display === 'none') {
+                contactInfo.style.display = 'block';
+            } else {
+                contactInfo.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
